@@ -2,7 +2,7 @@
 'Timespent' is a  Chrome Extension designed to track your browsing time. This extension enables you to monitor the time spent on social media platforms while browsing. It features a visible timer that appears on the websites you visit, allowing you to easily keep track of your browsing duration. Additionally, the timer resets daily, precisely at midnight.
 
 
-#Add websites for time tracking
+## Add websites for time tracking
 
 With 'Timespent,' you can simply add the websites you wish to track the time. The extension calculates the cumulative time spent across all added websites, providing valuable insights into your browsing habits. This Plugin helps to gain an understanding of how you allocate your time online. Become aware and make more informed decisions about your browsing habits.
 
