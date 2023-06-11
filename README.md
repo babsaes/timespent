@@ -6,7 +6,7 @@
 
 With 'Timespent,' you can simply add the websites you wish to track the time. The extension calculates the cumulative time spent across all added websites, providing valuable insights into your browsing habits. This Plugin helps to gain an understanding of how you allocate your time online. Become aware and make more informed decisions about your browsing habits.
 
-* Note: The extension has not been officially launched on Chrome yet. Until then, you can download it and access it through your developer site. * 
+** Note: The extension has not been officially launched on Chrome yet. Until then, you can download it and access it through your developer site. **
 
 
 
