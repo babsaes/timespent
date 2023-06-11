@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+   <style>
+
+    html {
+   
+        border-radius: 10px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        width: 400px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        border:none;
+      }
+
+
+
+.enter {
+        padding: 25px;
+    border-radius: 12px;
+        background-color: white;
+        margin-top: 30px;
+        border: solid 0.5px #ccc;
+
+      }
+
+
+    .list {
+      padding: 25px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 30px ;
+          border: solid 0.5px #ccc;
+
+    border-radius: 12px;
+
+
+         }
+
+
+
+      h2 {
+        color: #1e1e1e;
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0;
+        padding-bottom:10px;
+      }
+
+
+      #enterw {
+      
+        margin-bottom:10px;
+      }
+
+      h1 {
+        color: #f8f8f8;
+        font-weight: normal;
+        font-size: 22px;
+        margin: 0;
+        padding: 0px;
+      }
+
+
+      p {
+        font-size: 14px;
+
+      }
+
+
+
+    .intro {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #1e1e1e;
+/*background: linear-gradient(135deg, #1e1e1e 40%, #7527F4);*/
+        margin-top: 00px;
+      }
+
+
+      #time-display {
+        font-size: 24px;
+        font-weight: normal;
+        color: #cccccc;
+        margin-top: 2px;
+        margin-bottom: 0px;
+
+      }
+
+input {
+        padding: 12px;
+        border-radius: 6px;
+
+        border-color: #aaaaaa;
+        border-style: solid;
+        border-width: 0.5px;
+        font-size: 14px;
+        min-width: 200px;
+
+      }
+
+
+      #tracked-urls-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #tracked-urls-list li {
+        margin: 10px 0;
+        background-color: #f4f4f4;
+        padding: 12px;
+        font-weight: normal;
+        border-radius: 5px;
+        font-size: 14px;
+         border-radius: 6px;
+      }
+
+
+
+      #add-url {
+        background-color: #f4f4f4;
+        border: none;
+        color: #1e1e1e;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+       #add-url:hover, button:hover {
+        background-color:#ccc;
+
+        }
+      #add-url:disabled {
+        background-color: #888;
+        cursor: not-allowed;
+      }
+      
+      button {
+        background-color: white;
+        border:none;
+        color: #1e1e1e;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: -5px 0px;
+        cursor: pointer;
+        border-radius: 5px;
+        float: right;
+      }
+
+      button:disabled {
+        background-color: #888;
+        cursor: not-allowed;
+      }
+
+#button {
+        background-color: white;
+        border:none;
+        color: #1e1e1e;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: -5px 0px;
+        cursor: pointer;
+        border-radius: 5px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+    <h1>⏳ Time spent</h1>
+    <p id="time-display">00:00:00</p>
+  </div>
+    <div class="enter">
+    <h2 id="enterw"><b>Add a Website</b></h2>
+    <input type="text" id="url-input" placeholder="Enter URL">
+    <button id="add-url">Add</button>
+      </div>
+
+   <div class="list">
+    <h2><b>Time-counted Websites</b></h2>
+    <ul id="tracked-urls-list"></ul>
+</div>
+    <script src="popup.js"></script>
+  </body>
+</html>
