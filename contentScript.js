@@ -36,7 +36,7 @@ timeDisplayElement.style.boxShadow = "0 10px 15px rgb(0 0 0 / 20%)";
   timeDisplayElement.style.fontSize = "20px";
   timeDisplayElement.style.border = "0px solid #1e1e1e";
   timeDisplayElement.style.borderRadius = "8px";
-  timeDisplayElement.style.overflow = "hidden";  // Add scroll bars if necessary
+  timeDisplayElement.style.overflow = "hidden"; 
 
   return timeDisplayElement;
 }
