@@ -14,7 +14,7 @@ function createTimeDisplayElement() {
   timeDisplayElement.style.top = "10%";
     timeDisplayElement.style.left = "50%";
     // timeDisplayElement.style.transform = "translate(-50%, -50%)";
-  timeDisplayElement.style.fontFamily = "'Arial', sans-serif";  // Add this line
+  timeDisplayElement.style.fontFamily = "'Arial', sans-serif"; 
 
 timeDisplayElement.style.textAlign = "center";
 
@@ -50,7 +50,7 @@ function makeDraggable(element) {
     isDragging = true;
     offsetX = event.clientX - element.offsetLeft;
     offsetY = event.clientY - element.offsetTop;
-    element.style.transform = ""; // remove the transform
+    element.style.transform = ""; 
   });
 
   window.addEventListener("mousemove", (event) => {
