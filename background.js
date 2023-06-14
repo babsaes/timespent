@@ -3,9 +3,8 @@ let lastUpdateTime = new Date();
 let isOnTrackedWebsite = false;
 
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.local.set({ timeSpent: 0, lastUpdateTime: new Date() });
+  chrome.storage.local.set({ timeSpent: 0, lastUpdateTime: new Date(), currentWebsite: '' });
 });
-
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === "updateTime") {
     const currentTime = new Date();
@@ -25,6 +24,14 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     sendResponse({ timeSpent });
   }
   else if (request.type === "setTrackedWebsiteStatus") {
+    const url = new URL(sender.tab.url);
+    chrome.storage.local.get("currentWebsite", ({ currentWebsite }) => {
+      if (currentWebsite !== url.hostname) {
+        timeSpent = 0;
+        chrome.storage.local.set({ currentWebsite: url.hostname, timeSpent });
+      }
+    });
+
     isOnTrackedWebsite = request.value;
   }
 

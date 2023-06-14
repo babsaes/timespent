@@ -27,7 +27,7 @@ document.getElementById("add-url").addEventListener("click", function() {
   if (url) {
     chrome.storage.local.get(["trackedUrls"], function(result) {
       const trackedUrls = result.trackedUrls || [];
-      trackedUrls.push(url);
+trackedUrls.unshift(url);
       chrome.storage.local.set({ trackedUrls }, function() {
         updateTrackedUrls();
       });
